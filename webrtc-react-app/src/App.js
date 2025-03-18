@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import io from "socket.io-client";
 
 // http://localhost:4000
-const socket = io("http://10.102.10.226:4000"); // Adjust the URL and port as needed
+const socket = io("http://localhost:4000"); // Adjust the URL and port as needed
 
 function App() {
   const localVideoRef = useRef(null);
