@@ -1,38 +1,137 @@
-.App {
+/* Global resets and typography */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+/* Container styles */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+.app-header {
   text-align: center;
+  margin-bottom: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #2c3e50;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-header p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  color: #7f8c8d;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Video Chat Container */
+.video-chat-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Video container styles */
+.video-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.video-element {
+  width: 320px;
+  max-width: 100%;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Call button styles */
+.call-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.call-button:hover {
+  background-color: #1c5980;
+}
+
+/* Chat Section */
+.chat-section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat box styles */
+.chat-box {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  background-color: #fafafa;
+}
+
+/* Individual chat message */
+.chat-message {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* Chat input and button wrapper */
+.chat-input-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+/* Chat input styles */
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Send button styles */
+.send-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #1e8e4c;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .video-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
