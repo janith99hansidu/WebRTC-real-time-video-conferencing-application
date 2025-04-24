@@ -160,7 +160,7 @@ webrtc-video-chat/
 
 ## UI Preview
 
-![WebRTC Video Chat App UI](https://github.com/janith99hansidu/WebRTC-real-time-video-conferencing-application/tree/main/src/ui.png)
+![WebRTC Video Chat App UI](src/ui.png)
 
 ## Contributing
 
